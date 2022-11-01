@@ -1,0 +1,105 @@
+/****************************  HEADER  ******************/
+
+header {
+    background: url(./media/Evenement.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    /*margin-bottom: 40px;*/
+}
+
+
+
+
+/***************************** Section Offers  ***************/
+
+
+
+.offers {
+    padding: 100px 0;
+}
+
+.offers__title {
+    width: 50%;
+    margin-bottom: 25px;
+    color: #526145da;
+}
+
+.offers__introduction {
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #40522fda;
+    margin-bottom: 50px;
+}
+
+.offers__introduction span {
+    font-size: 25px;
+}
+
+.offers__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .offers__title {
+        width: 70%;
+    }
+    .offers__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .offers__title {
+        width: 100%;
+    }
+}
+
+
+
+/*************************   CARDS  **************************/
+.card-offer {
+    width: 23%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 83px -33px rgba(0, 0, 0, 0.43);
+}
+
+.card-offer__container-title {
+    background-color: #bbccabda;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-offer__icon {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.card-offer__title {
+    color: var(--color-blue)
+}
+
+.card-offer__description {
+    padding: 20px 10px 10px 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .card-offer {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card-offer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+/* Configuration générale du style */
+
+
+header {
+    background: url(./media/main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.nav-item {
+    color: darkslategrey;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 4em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #BCF5A9;
+    animation: title ease 5s;
+}
+
+
+h2 {
+    color: green;
+}
+
+
+.navbar {
+    width: auto;
+    justify-content: center;
+}
+
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translateY(230px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.flux {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: block;
+}
+
+
+
+/*
+*
+Section Services
+*
+*/
+
+.services__title {
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .services__title {
+        width: 100%
+    }
+}
+
+.bloc-service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bloc-service:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.bloc-service:nth-child(even) .bloc-service__container-texts {
+    padding-left: 2.5%;
+}
+
+.bloc-service:nth-child(odd) .bloc-service__container-texts {
+    padding-right: 5%;
+}
+
+.bloc-service__container-texts,
+.bloc-service__image {
+    width: 50%;
+}
+
+.bloc-service__title {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.bloc-service__title span {
+    color: var(--color-orange);
+}
+
+.bloc-service__description {
+    margin-bottom: 15px;
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .bloc-service,
+    .bloc-service:nth-child(even) {
+        flex-direction: column;
+    }
+    .bloc-service__container-texts,
+    .bloc-service__image {
+        width: 100%;
+    }
+}
+
