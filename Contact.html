@@ -1,0 +1,86 @@
+
+<!DOCTYPE html><!-- Page html de Contact inspiré des cours STUDY :) !-->
+<html>
+
+  <head>
+    <title>Mon formulaire de contact</title>
+    <meta charset="utf-8" />
+   
+    <!--Fonts google du style d'écriture -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <!--Liens vers style CSS principale (pour le Header / Footer) et Framework Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleContact.css">
+
+  </head>
+
+  <!--START BODY-->
+  <body>
+
+
+    <!--START HEADER-->
+    <header>
+      <nav class="navbar navbar-expand-sm bg-success fixed-top">
+          
+        <a href="inedex.html" class="nav-item"><img src="./media/icons8-nourriture-naturelle-16.png" alt="">Home</a>
+        <a href="Evenement.html" class="nav-item nav-link">Evenements</a>
+        <a href="Blog.html" class="nav-item nav-link">Blog</a>
+        <a href="Contact.html" class="nav-item nav-link">contact</a>
+          
+      </nav>
+    </header>
+    <!--END HEADER-->
+    
+
+    <!--START DIV: CONTACT-->
+      <div class="contact-wrapper">
+        <form class="form-horizontal" method="post" action="contact.php">
+          <h1 class="section-header">Une questions ?</h1>
+
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="nom" name="name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+          
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" placeholder="0600000000" name="phone">
+
+          <label for="category">Catégorie de question</label>
+          <select id="category" name="category">
+            <option value="default">Choisissez une catégorie</option>
+            <option value="help">Aide</option>
+            <option value="help">inscription Evenements</option>
+            <option value="pro-contact">Contact professionnel</option>
+          </select>
+          
+          <label for="message">Message</label>
+          <textarea rows="10" id="message" name="message" required></textarea>
+
+          <button class="send-button" id="submit" type="submit">Envoyer</button>
+
+          <div class="advert-wrapper">
+            <p>Souhaitez-vous recevoir nos news ?</p>
+            <input type="radio" id="yes" name="news-question" value="yes" checked>
+            <label for="yes">Oui</label>
+            <input type="radio" id="no" name="news-question" value="no">
+            <label for="no">Non</label>
+          </div>
+        </form>
+      </div>
+      <!--END DIV: CONTACT-->
+
+
+      <!--START FOOTER-->
+      <footer>
+        <img src="./media/icons8-nourriture-naturelle-16.png" alt="logo">
+        <p>Permaculture 2022 - Tous droits reservé ©</p>
+      </footer>
+      <!--END FOOTER-->
+
+
+  </body>
+  <!--END BODY-->
+
+</html>
